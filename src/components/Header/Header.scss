@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 5% 0 5%;
+
+  .header-navLink {
+    text-decoration: none;
+    font-family: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .header-btn {
+    display: flex;
+    .header-btn__signUp,
+    .header-btn__signIn {
+      display: none;
+    }
+  }
+}
