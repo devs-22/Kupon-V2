@@ -9,6 +9,10 @@
     }
     .flex-head__2 {
       flex-basis: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -77,6 +81,12 @@
   .flex-head {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    .flex-head__2 {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .section-header {

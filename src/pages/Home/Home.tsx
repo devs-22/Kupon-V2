@@ -27,7 +27,7 @@ const Home = () => {
           </section>
         </div>
         <div className="flex-head__2">
-          <p>11</p>
+          <img src={require('../../assets/Frame 1510.svg').default} alt="" />
         </div>
       </div>
     </>
