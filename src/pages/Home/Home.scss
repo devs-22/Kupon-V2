@@ -75,6 +75,35 @@
       );
     }
   }
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 350px;
+    background-color: #87bee41a;
+    margin: 0 20px 0 20px;
+
+    .summary__h1 {
+      font-size: 12px;
+      font-weight: 400;
+      color: #025ce4;
+      text-align: center;
+      margin-top: 36px;
+    }
+    .summary-header {
+      display: flex;
+      align-items: center;
+      gap: 1%;
+      justify-content: center;
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700px;
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -119,5 +148,27 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+
+  .summary {
+    margin: 0;
+    .summary__h1 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      margin-top: 84px;
+    }
+    .summary-header {
+      p {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700px;
+        margin: 0;
+      }
+      img {
+        max-width: 84.4px;
+        height: 46.59px;
+      }
+    }
   }
 }

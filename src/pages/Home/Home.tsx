@@ -30,6 +30,14 @@ const Home = () => {
           <img src={require('../../assets/Frame 1510.svg').default} alt="" />
         </div>
       </div>
+      <section className="summary">
+        <h1 className="summary__h1">GET STARTED</h1>
+        <div className="summary-header">
+          <img src={require('../../assets/Polypodium.svg').default} alt="" />
+          <p> Nigeria's First Invoicing App. </p>
+          <img src={require('../../assets/Polypodium.svg').default} alt="" />
+        </div>
+      </section>
     </>
   );
 };
