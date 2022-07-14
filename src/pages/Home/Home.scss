@@ -1,0 +1,57 @@
+@import 'src/base';
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  min-width: 278px;
+  min-height: 196px;
+
+  .section-header__p1 {
+    font-size: 32px;
+    max-width: 216px;
+    max-height: 120px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+  .section-header__p2 {
+    margin-top: 8%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 278px;
+    max-height: 120px;
+  }
+}
+
+.section-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .section-buttons__createAccount {
+    @include button(
+      $backgroundColor: #000000,
+      $color: #ffffff,
+      $hoverColor: #025ce4,
+      $width: 156px,
+      $border: none
+    );
+  }
+
+  .section-buttons__learnMore {
+    @include button(
+      $backgroundColor: #ffffff,
+      $color: #000000,
+      $hoverColor: #ffffff,
+      $width: 126px,
+      $border: 1px solid #000000
+    );
+  }
+}
