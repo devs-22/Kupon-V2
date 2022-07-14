@@ -16,7 +16,9 @@ const Header = () => {
       <div className="header-btn">
         <button className="header-btn__signUp">Sign Up</button>
         <button className="header-btn__signIn">Sign In</button>
-        <MenuToggle isOpen={isOpen} toggle={toggled} />
+        <div className="header-btn__toggle">
+          <MenuToggle isOpen={isOpen} toggle={toggled} />
+        </div>
       </div>
     </nav>
   );
