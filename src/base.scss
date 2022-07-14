@@ -1,0 +1,24 @@
+$primary-blue: #025ce4;
+
+@mixin button(
+  $backgroundColor: backgroundColor,
+  $color: color,
+  $hoverColor: hoverColor,
+  $width: width,
+  $border: border
+) {
+  background-color: $backgroundColor;
+  color: $color;
+  border: $border;
+  width: $width;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.9rem;
+  cursor: pointer;
+  height: 56px;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background-color: $hoverColor;
+  }
+}
