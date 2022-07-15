@@ -1,4 +1,5 @@
 import Header from '../../components/Header/Header';
+import MobileGetStarted from '../../components/MobileGetStarted/MobileGetStarted';
 import './Home.scss';
 
 const Home = () => {
@@ -36,6 +37,9 @@ const Home = () => {
           <img src={require('../../assets/Polypodium.svg').default} alt="" />
           <p> Nigeria's First Invoicing App. </p>
           <img src={require('../../assets/Polypodium.svg').default} alt="" />
+        </div>
+        <div>
+          <MobileGetStarted />
         </div>
       </section>
     </>
