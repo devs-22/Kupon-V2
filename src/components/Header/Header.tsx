@@ -20,6 +20,30 @@ const Header = () => {
           <MenuToggle isOpen={isOpen} toggle={toggled} />
         </div>
       </div>
+      {isOpen && (
+        <section className="header__fullVH">
+          <div className="header__fullVH_items">
+            <div>
+              <div className="header__links">
+                <p>FAQS</p>
+              </div>
+              <div className="header__links">
+                <p>Terms</p>
+              </div>
+              <div className="header__links">
+                <p>Privacy</p>
+              </div>
+              <div className="header__links">
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+          <div className="header__links__button">
+            <button className="header__links__button1">Sign in</button>
+            <button className="header__links__button2">Create Account</button>
+          </div>
+        </section>
+      )}
     </nav>
   );
 };

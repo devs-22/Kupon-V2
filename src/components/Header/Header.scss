@@ -11,13 +11,68 @@
       font-family: 700;
       font-size: 18px;
       color: #000000;
+      z-index: 100;
     }
 
     .header-btn {
       display: flex;
+      z-index: 100;
       .header-btn__signUp,
       .header-btn__signIn {
         display: none;
+      }
+    }
+
+    .header__fullVH {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      width: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      height: 100vh;
+
+      .header__fullVH_items {
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .header__links {
+          margin-bottom: 80px;
+          p {
+            margin: 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .header__links__button {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      .header__links__button1 {
+        @include button(
+          $backgroundColor: #ffffff,
+          $color: #000000,
+          $hoverColor: #ffffff,
+          $width: 298px,
+          $border: 1px solid #000000
+        );
+      }
+      .header__links__button2 {
+        @include button(
+          $backgroundColor: #000000,
+          $color: #ffffff,
+          $hoverColor: #025ce4,
+          $width: 298px,
+          $border: none
+        );
       }
     }
   }
