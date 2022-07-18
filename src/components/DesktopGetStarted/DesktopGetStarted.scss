@@ -1,0 +1,30 @@
+section {
+  .DGS-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .DGS-root__line {
+      margin-top: -1%;
+    }
+  }
+
+  .DGS__head {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    .DGS__heading {
+      text-align: center;
+      .DGS_hold__p2 {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .DGS_hold__p2 {
+        max-width: 276px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #8a8a8e;
+      }
+    }
+  }
+}
