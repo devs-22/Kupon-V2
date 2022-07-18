@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header';
 import MobileGetStarted from '../../components/MobileGetStarted/MobileGetStarted';
 import MediaQuery from 'react-responsive';
 import './Home.scss';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -49,6 +50,9 @@ const Home = () => {
           </MediaQuery>
         </div>
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
