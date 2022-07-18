@@ -1,11 +1,11 @@
 .footer-root {
   margin-top: 10%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 68px;
-  @media (min-width: 280px) {
-    gap: 4px;
-    flex-wrap: wrap;
+  gap: 4px;
+  @media (min-width: 768px) {
+    gap: 68px;
   }
 
   .footer-root__item {
