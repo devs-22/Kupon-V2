@@ -1,0 +1,42 @@
+.footer-root {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  @media (min-width: 280px) {
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .footer-root__item {
+    p {
+      font-weight: 700;
+      font-size: 20px;
+      background-color: #dadada;
+      border-radius: 20px;
+      padding: 10px;
+    }
+  }
+}
+
+.footer-year {
+  margin-top: 92px;
+  text-align: center;
+  color: #024bb9;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer-bns {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 3%;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-bottom: 10px;
+}
