@@ -1,5 +1,7 @@
+import DesktopGetStarted from '../../components/DesktopGetStarted/DesktopGetStarted';
 import Header from '../../components/Header/Header';
 import MobileGetStarted from '../../components/MobileGetStarted/MobileGetStarted';
+import MediaQuery from 'react-responsive';
 import './Home.scss';
 
 const Home = () => {
@@ -39,7 +41,12 @@ const Home = () => {
           <img src={require('../../assets/Polypodium.svg').default} alt="" />
         </div>
         <div>
-          <MobileGetStarted />
+          <MediaQuery minWidth={992}>
+            <DesktopGetStarted />
+          </MediaQuery>
+          <MediaQuery maxWidth={992}>
+            <MobileGetStarted />
+          </MediaQuery>
         </div>
       </section>
     </>

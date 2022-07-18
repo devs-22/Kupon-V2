@@ -27,7 +27,7 @@
 
     .section-header__p1 {
       font-size: 32px;
-      max-width: 216px;
+      max-width: 226px;
       max-height: 120px;
       text-align: center;
       line-height: 40px;
@@ -83,7 +83,7 @@
     min-width: 350px;
     background-color: #87bee41a;
     margin: 0 20px 0 20px;
-    padd
+    padding-bottom: 10%;
 
     .summary__h1 {
       font-size: 12px;
@@ -124,11 +124,13 @@
   .section-header {
     min-width: 542px;
     min-height: 216px;
+    margin-left: 130px;
+    align-items: flex-start;
 
     .section-header__p1 {
       font-size: 72px;
-      max-width: 562px;
-      max-height: 160px;
+      min-width: 562px;
+      min-height: 160px;
       line-height: 80px;
       font-weight: 700;
       text-align: start;
@@ -149,7 +151,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    margin-left: 130px;
     gap: 10px;
   }
 
