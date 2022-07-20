@@ -12,7 +12,10 @@ section {
   .DGS__head {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 5.5%;
+    @media (min-width: 1700px) {
+      gap: 4.3%;
+    }
     .DGS__heading {
       text-align: center;
       .DGS_hold__p2 {
