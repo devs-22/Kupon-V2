@@ -8,7 +8,7 @@ const DesktopGetStarted = () => {
           <img src={require('../../assets/Frame 1562.svg').default} alt="" />
         </div>
         <div className="DGS-root__line">
-          <img src={require('../../assets/Line 6.svg').default} alt="" />
+          <img src={require('../../assets/Line 6.svg').default} alt="" /> 
         </div>
         <div>
           <img src={require('../../assets/Frame 1563.svg').default} alt="" />
