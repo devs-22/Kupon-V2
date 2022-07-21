@@ -4,9 +4,9 @@ import TextField from '@mui/material/TextField';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/bootstrap.css';
 import OutlinedInput from '@mui/material/OutlinedInput';
-// import Visibility from '@mui/icons-material/Visibility';
-// import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import IconButton from '@mui/material/IconButton';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const Step1 = () => {
   const [values, setValues] = useState({
@@ -34,7 +34,6 @@ const Step1 = () => {
       <div>
         <label>Email</label>
         <TextField
-          id="outlined-basic"
           variant="outlined"
           InputProps={{
             endAdornment: (
@@ -66,11 +65,14 @@ const Step1 = () => {
                 onMouseDown={handleMouseDownPassword}
                 edge="end"
               >
-                {/* {values.showPassword ? <VisibilityOff /> : <Visibility />} */}
+                {values.showPassword ? (
+                  <VisibilityOffIcon />
+                ) : (
+                  <VisibilityIcon />
+                )}
               </IconButton>
             </InputAdornment>
           }
-          label="Password"
         />
       </div>
     </div>
