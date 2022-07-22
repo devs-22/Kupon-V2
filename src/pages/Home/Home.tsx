@@ -4,6 +4,7 @@ import MobileGetStarted from '../../components/MobileGetStarted/MobileGetStarted
 import MediaQuery from 'react-responsive';
 import './Home.scss';
 import Footer from '../../components/Footer/Footer';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
@@ -14,20 +15,30 @@ const Home = () => {
       <div className="flex-head">
         <div className="flex-head__1">
           <section className="section-header">
-            <p className="section-header__p1">
-              Create detailed invoice in a{' '}
-              <span style={{ color: '#025CE4' }}>jiffy</span>.
-            </p>
+            <motion.div
+              animate={{ scale: 1 }}
+              initial={{ scale: 0 }}
+              transition={{ type: 'spring', delay: 0.5, bounce: 0.5 }}
+            >
+              <p className="section-header__p1">
+                Create detailed invoice in a{' '}
+                <span style={{ color: '#025CE4' }}>jiffy</span>.
+              </p>
+            </motion.div>
             <p className="section-header__p2">
               Send invoices to your customers globally, Get to provide details
               of your goods in seconds.
             </p>
           </section>
           <section className="section-buttons">
-            <button className="section-buttons__createAccount">
-              Create Account
-            </button>
-            <button className="section-buttons__learnMore">Learn More</button>
+            <motion.div whileHover={{ scale: 1.07 }}>
+              <button className="section-buttons__createAccount">
+                Create Account
+              </button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.07 }}>
+              <button className="section-buttons__learnMore">Learn More</button>
+            </motion.div>
           </section>
         </div>
         <div className="flex-head__2">
@@ -35,11 +46,31 @@ const Home = () => {
         </div>
       </div>
       <section className="summary">
-        <h1 className="summary__h1">GET STARTED</h1>
+        <motion.div>
+          <h1 className="summary__h1">GET STARTED</h1>
+        </motion.div>
         <div className="summary-header">
-          <img src={require('../../assets/Polypodium.svg').default} alt="" />
-          <p> Nigeria's First Invoicing App. </p>
-          <img src={require('../../assets/Polypodium.svg').default} alt="" />
+          <motion.div
+            initial={{ scale: 0, x: -100 }}
+            whileInView={{ scale: 1, x: 0 }}
+            transition={{ type: 'spring', stiffness: 100 }}
+          >
+            <img src={require('../../assets/Polypodium.svg').default} alt="" />
+          </motion.div>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1, x: 0 }}
+            transition={{ type: 'spring', delay: 0.5, bounce: 0.5 }}
+          >
+            <p> Nigeria's First Invoicing App. </p>
+          </motion.div>
+          <motion.div
+            initial={{ scale: 0, x: 100 }}
+            whileInView={{ scale: 1, x: 0 }}
+            transition={{ type: 'spring', stiffness: 100 }}
+          >
+            <img src={require('../../assets/Polypodium.svg').default} alt="" />
+          </motion.div>
         </div>
         <div>
           <MediaQuery minWidth={992}>
