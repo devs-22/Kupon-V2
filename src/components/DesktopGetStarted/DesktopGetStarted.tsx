@@ -1,30 +1,31 @@
 import './DesktopGetStarted.scss';
+import { motion } from 'framer-motion';
 
 const DesktopGetStarted = () => {
   return (
     <section>
       <div className="DGS-root">
-        <div>
+        <motion.div whileHover={{ scale: 1.5 }}>
           <img src={require('../../assets/Frame 1562.svg').default} alt="" />
-        </div>
-        <div className="DGS-root__line">
+        </motion.div>
+        <motion.div className="DGS-root__line">
           <img src={require('../../assets/Line 6.svg').default} alt="" />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.5 }}>
           <img src={require('../../assets/Frame 1563.svg').default} alt="" />
-        </div>
-        <div className="DGS-root__line">
+        </motion.div>
+        <motion.div className="DGS-root__line">
           <img src={require('../../assets/Line 6.svg').default} alt="" />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.5 }}>
           <img src={require('../../assets/Frame 1564.svg').default} alt="" />
-        </div>
-        <div className="DGS-root__line">
+        </motion.div>
+        <motion.div className="DGS-root__line">
           <img src={require('../../assets/Line 6.svg').default} alt="" />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.5 }}>
           <img src={require('../../assets/Frame 1565.svg').default} alt="" />
-        </div>
+        </motion.div>
       </div>
       <div className="DGS__head">
         <div className="DGS__heading">
