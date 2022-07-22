@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.scss';
 import { MenuToggle } from './menuToggle';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -15,15 +16,19 @@ const Header = () => {
         Kupon
       </NavLink>
       <div className="header-btn">
-        <button
-          className="header-btn__signUp"
-          onClick={() => {
-            navigate('/SignUp');
-          }}
-        >
-          Sign Up
-        </button>
-        <button className="header-btn__signIn">Sign In</button>
+        <motion.div whileHover={{ scale: 1.07 }}>
+          <button
+            className="header-btn__signUp"
+            onClick={() => {
+              navigate('/SignUp');
+            }}
+          >
+            Sign Up
+          </button>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.07 }}>
+          <button className="header-btn__signIn">Sign In</button>
+        </motion.div>
         <div className="header-btn__toggle">
           <MenuToggle isOpen={isOpen} toggle={toggled} />
         </div>
