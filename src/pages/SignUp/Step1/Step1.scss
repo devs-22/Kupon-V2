@@ -1,0 +1,34 @@
+.step1__root {
+  .step1__labels {
+    label {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+    .labels__textField {
+      width: 496px;
+    }
+  }
+
+  .step1__root_p1 {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8a8a8e;
+  }
+
+  .step-1__button {
+    width: 496px;
+    height: 56px;
+    background: #025ce4;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}
