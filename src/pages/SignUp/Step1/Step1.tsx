@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Step1.scss';
 import { InputAdornment } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import PhoneInput from 'react-phone-input-2';
@@ -26,14 +27,18 @@ const Step1 = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="step1__root">
+      <p className="step1__root_p1">
+        Welcome, please create your account in 2 easy steps 🤩
+      </p>
+      <div className="step1__labels">
         <label>Full Name</label>
-        <TextField id="outlined-basic" variant="outlined" />
+        <TextField className="labels__textField" variant="outlined" />
       </div>
-      <div>
+      <div className="step1__labels">
         <label>Email</label>
         <TextField
+          className="labels__textField"
           variant="outlined"
           InputProps={{
             endAdornment: (
@@ -47,16 +52,22 @@ const Step1 = () => {
           }}
         />
       </div>
-      <div>
+      <div className="step1__labels">
         <label>Phone</label>
-        <PhoneInput country={'ng'} preferredCountries={['us', 'uk', 'gh']} />
+        <PhoneInput
+          country={'ng'}
+          preferredCountries={['us', 'uk', 'gh']}
+          inputStyle={{
+            width: '496px',
+          }}
+        />
       </div>
-      <div>
+      <div className="step1__labels">
         <label>Password</label>
         <OutlinedInput
-          id="outlined-adornment-password"
+          className="labels__textField"
           type={values.showPassword ? 'text' : 'password'}
-          value={values.password}
+          // value={values.password}
           endAdornment={
             <InputAdornment position="end">
               <IconButton
@@ -75,6 +86,31 @@ const Step1 = () => {
           }
         />
       </div>
+      <div className="step1__labels">
+        <label>Confirm Password</label>
+        <OutlinedInput
+          className="labels__textField"
+          type={values.showPassword ? 'text' : 'password'}
+          // value={values.password}
+          endAdornment={
+            <InputAdornment position="end">
+              <IconButton
+                aria-label="toggle password visibility"
+                onClick={handleClickShowPassword}
+                onMouseDown={handleMouseDownPassword}
+                edge="end"
+              >
+                {values.showPassword ? (
+                  <VisibilityOffIcon />
+                ) : (
+                  <VisibilityIcon />
+                )}
+              </IconButton>
+            </InputAdornment>
+          }
+        />
+      </div>
+      <button className="step-1__button">Step 1/2</button>
     </div>
   );
 };
