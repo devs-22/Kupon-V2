@@ -1,8 +1,25 @@
 .signUp-root {
   display: flex;
-
+  margin-left: 134px;
+  margin-top: 2%;
+  max-height: 100vh;
   .signUp-root__1 {
     flex-basis: 50%;
+    .signUp-root__1__p1 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .signUp-root__1__p2 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 38px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
   }
   .signUp-root__2 {
     flex-basis: 50%;
