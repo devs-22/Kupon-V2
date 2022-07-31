@@ -6,9 +6,8 @@ const SignUp = () => {
   return (
     <div className="signUp-root">
       <section className="signUp-root__1">
-        <p>Kupon</p>
-        <p>Create Account</p>
-        <p>Welcome, please create your account in 2 easy steps 🤩</p>
+        <p className="signUp-root__1__p1">Kupon</p>
+        <p className="signUp-root__1__p2">Create Account</p>
         <form>
           <Step1 />
         </form>
