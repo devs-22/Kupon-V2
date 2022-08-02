@@ -57,9 +57,7 @@ const Step1 = () => {
         <PhoneInput
           country={'ng'}
           preferredCountries={['us', 'uk', 'gh']}
-          inputStyle={{
-            width: '496px',
-          }}
+          inputClass={'number-class'}
         />
       </div>
       <div className="step1__labels">
