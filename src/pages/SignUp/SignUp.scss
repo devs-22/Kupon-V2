@@ -1,27 +1,57 @@
 .signUp-root {
   display: flex;
-  margin-left: 134px;
-  margin-top: 2%;
+  flex-direction: column;
   max-height: 100vh;
+  position: relative;
+  @media (min-width: 992px) {
+    flex-direction: row;
+    margin-left: 134px;
+  }
+  .or-l {
+    position: absolute;
+    left: 0;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
   .signUp-root__1 {
     flex-basis: 50%;
-    .signUp-root__1__p1 {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media (min-width: 992px) {
       margin: 0;
-      margin-bottom: 20px;
+    }
+
+    .signUp-root__1__p1 {
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      line-height: 22px;
+      margin: 88px 0 88px 0;
+      @media (min-width: 992px) {
+        font-size: 20px;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        margin-top: 25px;
+      }
     }
 
     .signUp-root__1__p2 {
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 500;
       line-height: 38px;
       margin: 0;
       margin-bottom: 10px;
+      @media (min-width: 992px) {
+        font-size: 32px;
+      }
     }
   }
   .signUp-root__2 {
     flex-basis: 50%;
+    display: none;
   }
 }
