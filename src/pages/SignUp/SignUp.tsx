@@ -15,7 +15,13 @@ const SignUp = () => {
         />
         <p className="signUp-root__1__p1">Kupon</p>
         <p className="signUp-root__1__p2">Create Account</p>
-        <form>{clicked ? <Step2 /> : <Step1 setClicked={setClicked} />}</form>
+        <form>
+          {clicked ? (
+            <Step2 setClicked={setClicked} />
+          ) : (
+            <Step1 setClicked={setClicked} />
+          )}
+        </form>
       </section>
       <section className="signUp-root__2">images</section>
     </div>
