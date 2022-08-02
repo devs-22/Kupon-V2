@@ -42,6 +42,9 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    &:hover {
+      background: #307aea;
+    }
     @media (min-width: 992px) {
       max-width: 496px;
     }

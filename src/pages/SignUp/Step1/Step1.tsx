@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
-const Step1 = () => {
+const Step1 = ({ setClicked }: any) => {
   const [values, setValues] = useState({
     password: '',
     showPassword: false,
@@ -108,7 +108,14 @@ const Step1 = () => {
           }
         />
       </div>
-      <button className="step-1__button">Step 1/2</button>
+      <button
+        className="step-1__button"
+        onClick={() => {
+          setClicked(true);
+        }}
+      >
+        Step 1/2
+      </button>
     </div>
   );
 };
