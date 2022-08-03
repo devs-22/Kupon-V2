@@ -3,7 +3,7 @@ import Home from './pages/Home/Home';
 import SignIn from './pages/SignIn/SignIn';
 import SignUp from './pages/SignUp/SignUp';
 import './App.css';
-//
+
 function App() {
   return (
     <div className="app-root">
