@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/Fonts/WEB/fonts/CabinetGrotesk-Regular.ttf';
-//
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
