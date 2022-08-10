@@ -17,6 +17,9 @@ const Step2 = ({ setClicked }: any) => {
       />
       <div>
         <label>Business Logo</label>
+        <div>
+          <input type={'file'} />
+        </div>
       </div>
       <div className="step2__labels">
         <label>Business Name</label>
