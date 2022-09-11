@@ -5,8 +5,10 @@ import MediaQuery from 'react-responsive';
 import './Home.scss';
 import Footer from '../../components/Footer/Footer';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <header>
@@ -32,11 +34,21 @@ const Home = () => {
           </section>
           <section className="section-buttons">
             <motion.div whileHover={{ scale: 1.07 }}>
-              <button className="section-buttons__createAccount">
+              <button
+                className="section-buttons__createAccount"
+                onClick={() => {
+                  navigate('/SignUp');
+                }}
+              >
                 Create Account
               </button>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.07 }}>
+            <motion.div
+              whileHover={{ scale: 1.07 }}
+              onClick={() => {
+                navigate('/LearnMore');
+              }}
+            >
               <button className="section-buttons__learnMore">Learn More</button>
             </motion.div>
           </section>
