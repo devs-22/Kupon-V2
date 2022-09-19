@@ -8,14 +8,14 @@ const LearnMore = () => {
         <Header />
       </header>
       <div className="learnMore__getToKnowUs">
-        <img src={require('../../assets/Polypodium.svg').default} alt="" />
-        <p>Get to know us</p>
-        <img src={require('../../assets/Polypodium.svg').default} alt="" />
         <img
           src={require('../../assets/Point_right.svg').default}
           alt=""
           className="hand"
         />
+        <img src={require('../../assets/Polypodium.svg').default} alt="" />
+        <p>Get to know us</p>
+        <img src={require('../../assets/Polypodium.svg').default} alt="" />
       </div>
       <section>
         <p>
