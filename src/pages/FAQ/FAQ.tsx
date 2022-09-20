@@ -54,7 +54,10 @@ const config = {
             />
       </section>
       <div className="questions">
+        <div className="text">
         <p>Questions not answered?</p>
+        <p className='text__2'>We are here and ready to help </p>
+        </div>
         <button className="contact__us__button">Contact Us</button>
       </div>
       <footer>
