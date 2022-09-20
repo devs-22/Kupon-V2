@@ -1,0 +1,41 @@
+.FAQ__root{
+    .FAQ__topic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 1%;
+    p{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    @media (min-width: 992px) {
+        p{
+            font-size: 72px;
+            line-height: 60px;
+            font-weight: 700;
+            margin: 0;
+        }
+        img{
+            max-width: 84.4px;
+            height: 46.59px;
+        }
+    }
+    }
+    section{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1106px;
+        width: 100%;
+        min-width: 500px;
+        max-height: 652px;
+        border-radius: 10px;
+        p{
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 80px;
+        }
+    }
+}
