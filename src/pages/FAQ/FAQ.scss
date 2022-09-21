@@ -1,0 +1,76 @@
+@import 'src/base';
+.FAQ__root{
+    .FAQ__topic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding-top: 100px;
+        gap: 1%;
+    p{
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    @media (min-width: 992px) {
+        p{
+            font-size: 52px;
+            line-height: 60px;
+            font-weight: 700;
+            margin: 0;
+        }
+        img{
+            max-width: 84.4px;
+            height: 46.59px;
+        }
+    }
+    }
+    section{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        max-width: 1306px;
+        width: 100%;
+        min-width: 500px;
+        max-height: 652px;
+        border-radius: 10px;
+        line-height: 50px;
+        p{
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 80px;
+            padding: 10% 10% 10% 10%;
+        }
+    }
+    .questions{
+        display: flex;
+        padding: 100px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1306px;
+        min-width: 500px;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(135, 190, 228, 0.1);
+        border-radius: 10px;
+        .text{
+            font-weight: 800;
+            .text__2{
+                color: #A1C6F7;
+            }
+        }
+        .contact__us__button {
+            background-color: #000000;
+            color: #ffffff;
+            font: bolder;
+            width: 150px;
+            height: 70px;
+            border: 2px solid #000000;
+            border-radius: 10%;
+        }
+    }
+}
