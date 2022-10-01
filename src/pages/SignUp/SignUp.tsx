@@ -32,7 +32,18 @@ const SignUp = () => {
           )}
         </form>
       </section>
-      <section className="signUp-root__2">images</section>
+      <section className="signUp-root__2">
+        <img
+          src={require('../../assets/Polypodium__login.svg').default}
+          alt=""
+          className="polysign"
+        />
+        <img
+          src={require('../../assets/Polypodium__login2.svg').default}
+          alt=""
+          className="polysign2"
+        />
+      </section>
     </div>
   );
 };
