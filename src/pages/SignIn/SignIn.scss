@@ -1,0 +1,158 @@
+.signIn__root {
+  display: flex;
+  height: 100vh;
+
+  .signIn__root__section1 {
+    flex-basis: 50%;
+    margin-left: 10%;
+    @media (min-width: 0px) and (max-width: 992px) {
+      flex-basis: 100%;
+      margin-left: 0;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      color: #000000;
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 7%;
+      @media (min-width: 0px) and (max-width: 992px) {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    .poly10 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+    .poly20 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @media (min-width: 992px) {
+        display: none;
+      }
+      @media (min-height: 500px) and (max-height: 723px) {
+        display: none;
+      }
+    }
+
+    .section1__login {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      text-transform: capitalize;
+      color: #000000;
+      margin-top: 7%;
+      @media (min-width: 0px) and (max-width: 992px) {
+        text-align: center;
+        margin-top: 26%;
+        font-size: 24px;
+      }
+    }
+    .section1__welcome {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #8a8a8e;
+      margin-top: 1%;
+      @media (min-width: 0px) and (max-width: 992px) {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    .section1__form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 5%;
+      @media (min-width: 0px) and (max-width: 992px) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form__logs {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        @media (min-width: 0px) and (max-width: 992px) {
+          width: 80%;
+        }
+
+        .form__logs__forgotPassword {
+          display: flex;
+          justify-content: end;
+          font-weight: 400;
+          font-size: 16px;
+          color: #025ce4;
+          margin-top: 5px;
+        }
+      }
+
+      .section1__form__buttons {
+        width: 60%;
+        @media (min-width: 0px) and (max-width: 992px) {
+          width: 80%;
+        }
+        .section1__form__buttons__login {
+          background: #025ce4;
+          border-radius: 10px;
+          color: #ffffff;
+          height: 50px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        .login__create {
+          text-align: center;
+          font-weight: 400;
+          font-size: 16px;
+          margin-top: 2%;
+          cursor: pointer;
+          span {
+            color: #025ce4;
+          }
+        }
+      }
+    }
+    .section1__date {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: capitalize;
+      color: #024bb9;
+      margin-top: calc(100vh - 90%);
+      @media (min-width: 0px) and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .signIn__root__section2 {
+    background: #025ce4;
+    height: 100vh;
+    flex-basis: 50%;
+    position: relative;
+    @media (min-width: 0px) and (max-width: 992px) {
+      display: none;
+    }
+
+    .poly1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .poly2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
