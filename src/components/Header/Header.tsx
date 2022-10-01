@@ -27,7 +27,14 @@ const Header = () => {
           </button>
         </motion.div>
         <motion.div whileHover={{ scale: 1.07 }}>
-          <button className="header-btn__signIn">Sign In</button>
+          <button
+            className="header-btn__signIn"
+            onClick={() => {
+              navigate('/SignIn');
+            }}
+          >
+            Sign In
+          </button>
         </motion.div>
         <div className="header-btn__toggle">
           <MenuToggle isOpen={isOpen} toggle={toggled} />
@@ -52,7 +59,14 @@ const Header = () => {
             </div>
           </div>
           <div className="header__links__button">
-            <button className="header__links__button1">Sign in</button>
+            <button
+              className="header__links__button1"
+              onClick={() => {
+                navigate('/SignIn');
+              }}
+            >
+              Sign in
+            </button>
             <button
               className="header__links__button2"
               onClick={() => {
