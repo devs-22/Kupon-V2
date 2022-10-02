@@ -5,6 +5,7 @@
   .signIn__root__section1 {
     flex-basis: 50%;
     margin-left: 10%;
+    position: relative;
     @media (min-width: 0px) and (max-width: 992px) {
       flex-basis: 100%;
       margin-left: 0;
@@ -128,7 +129,8 @@
       line-height: 14px;
       text-transform: capitalize;
       color: #024bb9;
-      margin-top: calc(100vh - 90%);
+      position: absolute;
+      bottom: 1%;
       @media (min-width: 0px) and (max-width: 992px) {
         display: none;
       }
@@ -153,6 +155,30 @@
       position: absolute;
       right: 0;
       bottom: 0;
+    }
+    .sally {
+      width: 436px;
+      height: 436px;
+      top: 25%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      @media (min-width: 1500px) {
+        width: 536px;
+        height: 536px;
+      }
+    }
+    .layer27 {
+      position: absolute;
+      left: 10%;
+      top: 25%;
+    }
+    .layer28 {
+      position: absolute;
+      right: 10%;
+      top: 15%;
     }
   }
 }

@@ -111,6 +111,21 @@ const SignIn = () => {
           alt=""
           className="poly2"
         />
+        <img
+          src={require('../../assets/Saly-2.svg').default}
+          alt=""
+          className="sally"
+        />
+        <img
+          src={require('../../assets/Layer 27.svg').default}
+          alt=""
+          className="layer27"
+        />
+        <img
+          src={require('../../assets/Layer 28.svg').default}
+          alt=""
+          className="layer28"
+        />
       </section>
     </div>
   );
