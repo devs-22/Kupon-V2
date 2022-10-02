@@ -70,5 +70,29 @@
       right: 0;
       bottom: 0;
     }
+    .sally2 {
+      width: 436px;
+      height: 436px;
+      top: 25%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      @media (min-width: 1500px) {
+        width: 536px;
+        height: 536px;
+      }
+    }
+    .layer270 {
+      position: absolute;
+      left: 10%;
+      top: 25%;
+    }
+    .layer280 {
+      position: absolute;
+      right: 10%;
+      top: 15%;
+    }
   }
 }

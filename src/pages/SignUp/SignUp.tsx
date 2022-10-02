@@ -43,6 +43,21 @@ const SignUp = () => {
           alt=""
           className="polysign2"
         />
+        <img
+          src={require('../../assets/Saly-2.svg').default}
+          alt=""
+          className="sally2"
+        />
+        <img
+          src={require('../../assets/Layer 27.svg').default}
+          alt=""
+          className="layer270"
+        />
+        <img
+          src={require('../../assets/Layer 28.svg').default}
+          alt=""
+          className="layer280"
+        />
       </section>
     </div>
   );
