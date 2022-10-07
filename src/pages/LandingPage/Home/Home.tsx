@@ -54,7 +54,7 @@ const Home = () => {
           </section>
         </div>
         <div className="flex-head__2">
-          <img src={require('../../assets/Frame 1510.svg').default} alt="" />
+          <img src={require('../../../assets/Frame 1510.svg').default} alt="" />
         </div>
       </div>
       <section className="summary">
@@ -67,7 +67,10 @@ const Home = () => {
             whileInView={{ scale: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 100 }}
           >
-            <img src={require('../../assets/Polypodium.svg').default} alt="" />
+            <img
+              src={require('../../../assets/Polypodium.svg').default}
+              alt=""
+            />
           </motion.div>
           <motion.div
             initial={{ scale: 0 }}
@@ -81,7 +84,10 @@ const Home = () => {
             whileInView={{ scale: 1, x: 0 }}
             transition={{ type: 'spring', stiffness: 100 }}
           >
-            <img src={require('../../assets/Polypodium.svg').default} alt="" />
+            <img
+              src={require('../../../assets/Polypodium.svg').default}
+              alt=""
+            />
           </motion.div>
         </div>
         <div>

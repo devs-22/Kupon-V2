@@ -11,7 +11,7 @@ const SignUp = () => {
     <div className="signUp-root">
       <section className="signUp-root__1">
         <img
-          src={require('../../assets/Polypodium 2.svg').default}
+          src={require('../../../assets/Polypodium 2.svg').default}
           alt="logo"
           className="or-l"
         />
@@ -34,27 +34,27 @@ const SignUp = () => {
       </section>
       <section className="signUp-root__2">
         <img
-          src={require('../../assets/Polypodium__login.svg').default}
+          src={require('../../../assets/Polypodium__login.svg').default}
           alt=""
           className="polysign"
         />
         <img
-          src={require('../../assets/Polypodium__login2.svg').default}
+          src={require('../../../assets/Polypodium__login2.svg').default}
           alt=""
           className="polysign2"
         />
         <img
-          src={require('../../assets/Saly-2.svg').default}
+          src={require('../../../assets/Saly-2.svg').default}
           alt=""
           className="sally2"
         />
         <img
-          src={require('../../assets/Layer 27.svg').default}
+          src={require('../../../assets/Layer 27.svg').default}
           alt=""
           className="layer270"
         />
         <img
-          src={require('../../assets/Layer 28.svg').default}
+          src={require('../../../assets/Layer 28.svg').default}
           alt=""
           className="layer280"
         />

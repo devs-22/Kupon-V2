@@ -42,9 +42,9 @@ const config = {
         <Header />
       </header>
       <div className="FAQ__topic">
-        <img src={require('../../assets/Polypodium.svg').default} alt=""/>
+        <img src={require('../../../assets/Polypodium.svg').default} alt=""/>
         <p>FAQs</p>
-        <img src={require('../../assets/Polypodium.svg').default}alt="" />
+        <img src={require('../../../assets/Polypodium.svg').default}alt="" />
       </div>
       <section>
       <Faq

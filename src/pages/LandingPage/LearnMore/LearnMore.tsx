@@ -10,18 +10,18 @@ const LearnMore = () => {
       <div className="learnMore__root">
         <div className="learnMore__getToKnowUs">
           <img
-            src={require('../../assets/Point_right.svg').default}
+            src={require('../../../assets/Point_right.svg').default}
             alt=""
             className="hand"
           />
           <img
-            src={require('../../assets/Polypodium.svg').default}
+            src={require('../../../assets/Polypodium.svg').default}
             alt=""
             className="podium"
           />
           <p>Get to know us</p>
           <img
-            src={require('../../assets/Polypodium.svg').default}
+            src={require('../../../assets/Polypodium.svg').default}
             alt=""
             className="podium"
           />

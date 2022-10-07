@@ -46,7 +46,9 @@ const Step1 = ({ setClicked }: any) => {
                 endAdornment: (
                   <InputAdornment position="end">
                     <img
-                      src={require('../../../assets/Tick Square.svg').default}
+                      src={
+                        require('../../../../assets/Tick Square.svg').default
+                      }
                       alt="tick"
                     />
                   </InputAdornment>

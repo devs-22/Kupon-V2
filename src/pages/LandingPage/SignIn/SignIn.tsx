@@ -31,7 +31,7 @@ const SignIn = () => {
     <div className="signIn__root">
       <section className="signIn__root__section1">
         <img
-          src={require('../../assets/Polypodium 2.svg').default}
+          src={require('../../../assets/Polypodium 2.svg').default}
           alt=""
           className="poly10"
           onClick={() => {
@@ -39,7 +39,7 @@ const SignIn = () => {
           }}
         />
         <img
-          src={require('../../assets/Polypodium__login2.svg').default}
+          src={require('../../../assets/Polypodium__login2.svg').default}
           alt=""
           className="poly20"
         />
@@ -102,27 +102,27 @@ const SignIn = () => {
       </section>
       <section className="signIn__root__section2">
         <img
-          src={require('../../assets/Polypodium__login.svg').default}
+          src={require('../../../assets/Polypodium__login.svg').default}
           alt=""
           className="poly1"
         />
         <img
-          src={require('../../assets/Polypodium__login2.svg').default}
+          src={require('../../../assets/Polypodium__login2.svg').default}
           alt=""
           className="poly2"
         />
         <img
-          src={require('../../assets/Saly-2.svg').default}
+          src={require('../../../assets/Saly-2.svg').default}
           alt=""
           className="sally"
         />
         <img
-          src={require('../../assets/Layer 27.svg').default}
+          src={require('../../../assets/Layer 27.svg').default}
           alt=""
           className="layer27"
         />
         <img
-          src={require('../../assets/Layer 28.svg').default}
+          src={require('../../../assets/Layer 28.svg').default}
           alt=""
           className="layer28"
         />
