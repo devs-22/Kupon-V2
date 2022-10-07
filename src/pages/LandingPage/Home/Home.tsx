@@ -1,9 +1,9 @@
-import DesktopGetStarted from '../../components/DesktopGetStarted/DesktopGetStarted';
-import Header from '../../components/Header/Header';
-import MobileGetStarted from '../../components/MobileGetStarted/MobileGetStarted';
+import DesktopGetStarted from '../../../components/DesktopGetStarted/DesktopGetStarted';
+import Header from '../../../components/Header/Header';
+import MobileGetStarted from '../../../components/MobileGetStarted/MobileGetStarted';
 import MediaQuery from 'react-responsive';
 import './Home.scss';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../../components/Footer/Footer';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
